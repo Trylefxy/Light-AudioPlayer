@@ -94,5 +94,18 @@ A Light AudioPlayer with HTML5, jQuery and CSS3.
     <script src="audioplayer.js"></script>
     <script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
     
-##更多高级用法、小魔术等待添加...
-可以自己先研究下audioplayer.js哦。
+##高级用法
+插件有一些可选的参数：
+
+1. `classPrefix` 传递的值会成为父元素的类名和子元素的类前缀名。
+2. `str` 开头的参数有助于你将按钮提示本地化。
+
+具体可以看看下面的用法：
+
+    $( 'audio' ).audioPlayer(
+    {
+        classPrefix: 'audioplayer',
+        strPlay: 'Play',
+        strPause: 'Pause',
+        strVolume: 'Volume'
+    });
